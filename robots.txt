@@ -1,0 +1,16 @@
+# IP Ownership: Failsafe Architecture Pty Ltd | Creator: George Rossiter
+# This protocol allows all search engine crawlers access to the public hub.
+
+User-agent: *
+
+# Allow access to the entire site, except for sensitive directories.
+Allow: /
+
+# Disallow common administrative and sensitive directories
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /private/
+Disallow: /database/
+
+# Specify the location of your XML Sitemap to ensure maximum indexation.
+Sitemap: https://georgerossiter.com/sitemap.xml
